@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">William Xu — systems builder</title>
+  <desc id="desc">A dark technical banner with a neon radar display, signal traces, and the words William Xu, real-time systems, robotics, playful interfaces.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b13" />
+      <stop offset="0.55" stop-color="#0d1117" />
+      <stop offset="1" stop-color="#08131a" />
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ee787" stop-opacity="0.52" />
+      <stop offset="1" stop-color="#7ee787" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f0f6fc" />
+      <stop offset="0.6" stop-color="#d2fbe2" />
+      <stop offset="1" stop-color="#7ee787" />
+    </linearGradient>
+    <radialGradient id="radarGlow">
+      <stop offset="0" stop-color="#7ee787" stop-opacity="0.10" />
+      <stop offset="0.65" stop-color="#58a6ff" stop-opacity="0.04" />
+      <stop offset="1" stop-color="#0d1117" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.12" />
+    </pattern>
+    <filter id="greenGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+    <clipPath id="radarClip">
+      <circle cx="955" cy="180" r="132" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .sweep { transform-origin: 955px 180px; animation: sweep 8s linear infinite; }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; }
+    .blink { animation: blink 2s steps(1) infinite; }
+    @keyframes sweep { to { transform: rotate(360deg); } }
+    @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+    @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: .22; } }
+    @media (prefers-reduced-motion: reduce) { .sweep, .pulse, .blink { animation: none; } }
+  </style>
+
+  <rect width="1200" height="360" rx="22" fill="url(#background)" />
+  <rect width="1200" height="360" rx="22" fill="url(#grid)" />
+  <rect x="1" y="1" width="1198" height="358" rx="21" fill="none" stroke="#30363d" stroke-width="2" />
+
+  <circle cx="955" cy="180" r="190" fill="url(#radarGlow)" />
+  <circle cx="955" cy="180" r="145" fill="#58a6ff" opacity="0.04" filter="url(#softGlow)" />
+
+  <g opacity="0.18" stroke="#58a6ff" fill="none">
+    <path d="M48 54 H330" />
+    <path d="M48 306 H420" />
+    <path d="M1120 54 H1152 V86" />
+    <path d="M80 274 H48 V242" />
+  </g>
+
+  <g class="sans">
+    <text x="68" y="85" fill="#7ee787" font-size="15" font-weight="650" letter-spacing="3">SYSTEMS BUILDER // SHANGHAI</text>
+    <text x="64" y="172" fill="url(#titleGradient)" font-size="72" font-weight="780" letter-spacing="-2">WILLIAM XU</text>
+    <text x="69" y="215" fill="#8b949e" font-size="21" font-weight="450" letter-spacing="1.2">REAL-TIME SYSTEMS  ·  ROBOTICS  ·  PLAYFUL INTERFACES</text>
+  </g>
+
+  <g class="mono" font-size="13">
+    <rect x="68" y="256" width="12" height="12" rx="2" fill="#7ee787" class="pulse" />
+    <text x="92" y="267" fill="#c9d1d9">signal acquired</text>
+    <text x="260" y="267" fill="#484f58">/</text>
+    <text x="282" y="267" fill="#58a6ff">build → test → tune → ship</text>
+  </g>
+
+  <g clip-path="url(#radarClip)">
+    <circle cx="955" cy="180" r="132" fill="#07140f" opacity="0.48" />
+    <g stroke="#7ee787" fill="none">
+      <circle cx="955" cy="180" r="33" opacity="0.20" />
+      <circle cx="955" cy="180" r="66" opacity="0.24" />
+      <circle cx="955" cy="180" r="99" opacity="0.28" />
+      <circle cx="955" cy="180" r="132" opacity="0.42" />
+      <path d="M823 180 H1087 M955 48 V312" opacity="0.24" />
+      <path d="M861.7 86.7 L1048.3 273.3 M1048.3 86.7 L861.7 273.3" opacity="0.14" />
+    </g>
+
+    <g class="sweep">
+      <path d="M955 180 L1078 130 A132 132 0 0 1 1087 180 Z" fill="url(#beam)" opacity="0.72" />
+      <path d="M955 180 L1082 148" stroke="#7ee787" stroke-width="1.5" opacity="0.88" />
+    </g>
+
+    <g fill="#7ee787" filter="url(#greenGlow)">
+      <circle cx="1017" cy="111" r="3.5" class="pulse" />
+      <circle cx="891" cy="222" r="3" opacity="0.76" />
+      <circle cx="1038" cy="238" r="2.5" opacity="0.58" />
+    </g>
+
+    <g stroke="#58a6ff" fill="none" opacity="0.8">
+      <path d="M935 180 H975 M955 160 V200" />
+      <circle cx="955" cy="180" r="6" />
+    </g>
+  </g>
+
+  <g class="mono" font-size="11" fill="#8b949e">
+    <text x="934" y="39">000°</text>
+    <text x="1097" y="184">090°</text>
+    <text x="934" y="329">180°</text>
+    <text x="781" y="184">270°</text>
+    <text x="1070" y="298" fill="#7ee787" class="blink">● LIVE</text>
+  </g>
+
+  <g transform="translate(68 325)" opacity="0.5">
+    <path d="M0 0 H54 L66 -11 L80 8 L94 -19 L110 0 H154 L166 -7 L177 0 H236" fill="none" stroke="#58a6ff" stroke-width="1.4" />
+  </g>
+</svg>

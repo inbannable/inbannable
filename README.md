@@ -1,49 +1,92 @@
-# Hi, I'm William Xu 👋
+<div align="center">
+  <img src="./assets/header.svg" width="100%" alt="William Xu — real-time systems, robotics, and playful interfaces" />
+</div>
 
-**C++ builder · Robotics programmer · Audio & DSP explorer**
+<div align="center">
+  <a href="https://github.com/inbannable?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_THE_LAB-0d1117?style=for-the-badge&logo=github&logoColor=7ee787" alt="Explore William's repositories" /></a>
+  <img src="https://img.shields.io/badge/SHANGHAI-0d1117?style=for-the-badge&logo=googlemaps&logoColor=58a6ff" alt="Based in Shanghai" />
+  <img src="https://img.shields.io/badge/STATUS-BUILDING-0d1117?style=for-the-badge&logo=statuspage&logoColor=ff7b72" alt="Currently building" />
+</div>
 
-I enjoy turning low-level signals and real-time data into practical software.
+## `> whoami`
 
-## About me
+I'm **William Xu**, a builder drawn to software that senses the world, makes a decision, and reacts in real time.
 
-- 🔭 I'm currently building **[EchoRadar](https://github.com/inbannable/EchoRadar)**, a Windows C++20 project for detecting important FPS audio events and, eventually, estimating their direction in a lightweight radar overlay.
-- 🎧 I'm interested in real-time audio processing, DSP, event detection, localization, low-latency interfaces, and reliable dataset tooling.
-- 🤖 I have worked on Java robot software connected to **[FRC Team 6940](https://github.com/Team6940)**, including offseason robot control and motor-control experiments.
-- 🧪 I care about honest engineering status, reproducible tests, and building solid foundations before polishing the interface.
+My projects move between **modern C++ audio systems**, **robot control**, **Apple-platform apps**, and **interactive simulations**. I like the interesting layer where algorithms meet hardware constraints—and where a rough technical idea becomes something you can actually use, tune, or play.
 
-## Featured project
+```text
+INPUT                         THINK                         ACT
+audio / sensors / intent  →  DSP / control / strategy  →  radar / robot / interface
+```
 
-### 🔊 [EchoRadar](https://github.com/inbannable/EchoRadar)
+## Current signals
 
-A real-time game-audio analysis system written in modern C++.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⌚ <a href="https://github.com/inbannable/WristAsk">腕问 · WristAsk</a></h3>
+      <p>A quiet AI assistant built around Apple Watch. Ask by dictation, handwriting, or keyboard; read a streaming DeepSeek response right on your wrist.</p>
+      <p><code>Swift</code> <code>SwiftUI</code> <code>watchOS</code> <code>iOS</code> <code>WatchConnectivity</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📡 <a href="https://github.com/inbannable/EchoRadar">EchoRadar v2</a></h3>
+      <p>Windows research software that turns native 5.1/7.1 game audio into a 24-sector azimuth radar—without inventing direction from stereo.</p>
+      <p><code>C++20</code> <code>WASAPI</code> <code>STFT</code> <code>DirectX 11</code> <code>CMake</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🎯 <a href="https://github.com/inbannable/Turret-Lab">Turret Lab</a></h3>
+      <p>A deterministic browser lab for comparing direct PID with cascaded position-to-velocity control under the same plant, target, and disturbance.</p>
+      <p><code>TypeScript</code> <code>React</code> <code>Control Systems</code> <code>Simulation</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🤖 <a href="https://github.com/inbannable/2026Rebuilt-dev">Orion · FRC 6940</a></h3>
+      <p>Robot software featuring shoot-on-the-move prediction, multi-mode turret control, dual-encoder absolute positioning, vision fusion, and autonomous routines.</p>
+      <p><code>Java</code> <code>WPILib</code> <code>AdvantageKit</code> <code>PathPlanner</code></p>
+    </td>
+  </tr>
+</table>
 
-- Stereo audio capture, buffering, STFT, and spectral feature extraction
-- Multi-stage gunshot detection with diagnostic and visualization tools
-- Safer dataset recording, review, replay, and asset-inventory workflows
-- **83 automated tests** covering core algorithms and dataset operations
-- An active roadmap toward footstep detection, direction estimation, tracking, and a production overlay
+## Side quests
 
-> EchoRadar is under active development. Its audio-analysis foundation is working; localization and the final overlay are still being built.
+| Project | Experiment | Built with |
+|:--|:--|:--|
+| [**星阵 · 3D Gomoku**](https://github.com/inbannable/3d-gomoku) | A gravity-aware 5×5×5 connect-four game with a strategy AI, move coach, and interactive 3D board. | TypeScript · React |
+| [**Director's Cut**](https://github.com/inbannable/directors-cut-mc26.2) | A server-authoritative Minecraft story director that injects random events, hints, and controlled chaos. | Java · Fabric |
+| [**Conway's Game of Life**](https://github.com/inbannable/Conway-Life-Game) | A browser-based exploration of emergence from a tiny set of rules. | HTML · CSS · JavaScript |
 
-## Selected repositories
+## The toolbox
 
-| Project | What it is | Tech |
-|---|---|---|
-| **[2024Crescendo-OffSeason](https://github.com/inbannable/2024Crescendo-OffSeason)** | Personalized offseason robot code based on Team 6940's archived 2024 Crescendo project. | Java · FRC |
-| **[2025SimpleMotorControl](https://github.com/inbannable/2025SimpleMotorControl)** | A personalized fork for focused robot motor-control experiments. | Java |
-| **[cs2-external-esp](https://github.com/inbannable/cs2-external-esp)** | A public fork of IMXNOOBX's modern C++ project, retained with upstream attribution. | C++ |
-| **[gomoku](https://github.com/inbannable/gomoku)** | A small Python Gomoku project and an earlier coding exploration. | Python |
+<div align="center">
+  <img src="https://img.shields.io/badge/C%2B%2B20-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++20" />
+  <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white" alt="CMake" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+</div>
 
-## What I'm exploring
+<br />
 
-    real-time audio → spectral features → event detection
-                                          ↓
-                             direction estimation
-                                          ↓
-                            lightweight visualization
+| Systems & signal | Robotics & control | Product & interface |
+|:--|:--|:--|
+| Real-time audio · multichannel DSP · spectral analysis · low-latency C++ | FRC · PID and cascaded control · trajectory planning · sensor fusion | SwiftUI · watchOS · React · TypeScript · data visualization |
 
-I'm especially interested in projects where signal processing, systems programming, and useful interfaces meet.
+## GitHub telemetry
+
+<div align="center">
+  <img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=inbannable&theme=github_dark" alt="William's public GitHub activity graph" />
+  <br />
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=inbannable&theme=github_dark" alt="William's public GitHub statistics" />
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=inbannable&theme=github_dark" alt="William's public repositories by language" />
+</div>
 
 ---
 
-Thanks for stopping by — feel free to explore my repositories and follow along as EchoRadar develops.
+<div align="center">
+  <samp>observe carefully · model honestly · build the thing</samp>
+  <br /><br />
+  <a href="https://github.com/inbannable?tab=repositories">take a look around →</a>
+</div>
