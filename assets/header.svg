@@ -1,123 +1,161 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-  <title id="title">inbannable — systems, signals, machines</title>
-  <desc id="desc">A subdued cyberpunk terminal banner with a dim radar, signal traces, and the handle inbannable.</desc>
+  <title id="title">inbannable — quiet systems from the edge of the signal</title>
+  <desc id="desc">A restrained cyberpunk terminal header with cyan and magenta glitch traces, scanlines, system telemetry, and a rotating radar.</desc>
 
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070b13" />
-      <stop offset="0.55" stop-color="#0d1117" />
-      <stop offset="1" stop-color="#08131a" />
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050509" />
+      <stop offset="0.58" stop-color="#090a12" />
+      <stop offset="1" stop-color="#070d13" />
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#aeb8c4" />
+      <stop offset="0.55" stop-color="#d2d8df" />
+      <stop offset="1" stop-color="#8aa8ad" />
     </linearGradient>
     <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7ee787" stop-opacity="0.52" />
-      <stop offset="1" stop-color="#7ee787" stop-opacity="0" />
+      <stop offset="0" stop-color="#00e5ff" stop-opacity="0.34" />
+      <stop offset="0.75" stop-color="#8b5cf6" stop-opacity="0.10" />
+      <stop offset="1" stop-color="#ff2a6d" stop-opacity="0" />
     </linearGradient>
-    <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#c9d1d9" />
-      <stop offset="0.72" stop-color="#9fb8ae" />
-      <stop offset="1" stop-color="#6ccf8e" />
-    </linearGradient>
-    <radialGradient id="radarGlow">
-      <stop offset="0" stop-color="#7ee787" stop-opacity="0.10" />
-      <stop offset="0.65" stop-color="#58a6ff" stop-opacity="0.04" />
-      <stop offset="1" stop-color="#0d1117" stop-opacity="0" />
+    <radialGradient id="radarShade">
+      <stop offset="0" stop-color="#00e5ff" stop-opacity="0.055" />
+      <stop offset="0.72" stop-color="#8b5cf6" stop-opacity="0.025" />
+      <stop offset="1" stop-color="#050509" stop-opacity="0" />
     </radialGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.075" />
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#00e5ff" stroke-width="0.55" opacity="0.055" />
     </pattern>
-    <filter id="greenGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 3.5H1200" stroke="#ffffff" stroke-width="0.35" opacity="0.055" />
+    </pattern>
+    <filter id="cyanGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="18" />
-    </filter>
     <clipPath id="radarClip">
-      <circle cx="955" cy="180" r="132" />
+      <circle cx="962" cy="180" r="132" />
+    </clipPath>
+    <clipPath id="shell">
+      <path d="M18 1H1182L1199 18V342L1182 359H18L1 342V18Z" />
     </clipPath>
   </defs>
 
   <style>
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-    .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .sweep { transform-origin: 955px 180px; animation: sweep 8s linear infinite; }
-    .pulse { animation: pulse 2.8s ease-in-out infinite; }
-    .blink { animation: blink 2s steps(1) infinite; }
+    .sweep { transform-origin: 962px 180px; animation: sweep 9s linear infinite; }
+    .pulse { animation: pulse 3.2s ease-in-out infinite; }
+    .cursor { animation: cursor 1.4s steps(1) infinite; }
+    .glitch-c { animation: glitchC 7s steps(1) infinite; }
+    .glitch-m { animation: glitchM 7s steps(1) infinite; }
     @keyframes sweep { to { transform: rotate(360deg); } }
-    @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
-    @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: .22; } }
-    @media (prefers-reduced-motion: reduce) { .sweep, .pulse, .blink { animation: none; } }
+    @keyframes pulse { 0%, 100% { opacity: .25; } 50% { opacity: .85; } }
+    @keyframes cursor { 0%, 52% { opacity: .62; } 53%, 100% { opacity: .08; } }
+    @keyframes glitchC { 0%, 92%, 96%, 100% { transform: translate(0); } 93% { transform: translate(-4px, 1px); } 94% { transform: translate(2px, -1px); } }
+    @keyframes glitchM { 0%, 92%, 96%, 100% { transform: translate(0); } 93% { transform: translate(4px, -1px); } 95% { transform: translate(-2px, 1px); } }
+    @media (prefers-reduced-motion: reduce) { .sweep, .pulse, .cursor, .glitch-c, .glitch-m { animation: none; } }
   </style>
 
-  <rect width="1200" height="360" rx="22" fill="url(#background)" />
-  <rect width="1200" height="360" rx="22" fill="url(#grid)" />
-  <rect x="1" y="1" width="1198" height="358" rx="21" fill="none" stroke="#30363d" stroke-width="2" />
+  <g clip-path="url(#shell)">
+    <rect width="1200" height="360" fill="url(#bg)" />
+    <rect width="1200" height="360" fill="url(#grid)" />
+    <rect width="1200" height="360" fill="url(#scanlines)" />
+    <path d="M0 0H1200V5H0Z" fill="#00e5ff" opacity="0.10" />
+    <path d="M0 355H1200V360H0Z" fill="#ff2a6d" opacity="0.08" />
 
-  <circle cx="955" cy="180" r="190" fill="url(#radarGlow)" />
-  <circle cx="955" cy="180" r="145" fill="#58a6ff" opacity="0.04" filter="url(#softGlow)" />
+    <circle cx="962" cy="180" r="190" fill="url(#radarShade)" />
 
-  <g opacity="0.18" stroke="#58a6ff" fill="none">
-    <path d="M48 54 H330" />
-    <path d="M48 306 H420" />
-    <path d="M1120 54 H1152 V86" />
-    <path d="M80 274 H48 V242" />
-  </g>
-
-  <g class="mono">
-    <text x="68" y="84" fill="#52606d" font-size="12" letter-spacing="1.8">// node: shanghai / channel: 0x17</text>
-    <text x="68" y="162" fill="#3f8f62" font-size="18">~/</text>
-    <text x="94" y="162" fill="url(#titleGradient)" font-size="48" font-weight="500" letter-spacing="1.5">inbannable</text>
-    <rect x="397" y="126" width="10" height="42" fill="#6ccf8e" opacity="0.55" class="blink" />
-    <text x="70" y="207" fill="#68737f" font-size="15" letter-spacing="2.2">systems / signals / machines</text>
-  </g>
-
-  <g class="mono" font-size="12">
-    <circle cx="73" cy="263" r="4" fill="#6ccf8e" class="pulse" />
-    <text x="88" y="267" fill="#73808c">[ listening ]</text>
-    <text x="194" y="267" fill="#343d46">::</text>
-    <text x="218" y="267" fill="#5f7790">build quietly. measure twice.</text>
-  </g>
-
-  <g clip-path="url(#radarClip)">
-    <circle cx="955" cy="180" r="132" fill="#07140f" opacity="0.48" />
-    <g stroke="#7ee787" fill="none">
-      <circle cx="955" cy="180" r="33" opacity="0.12" />
-      <circle cx="955" cy="180" r="66" opacity="0.15" />
-      <circle cx="955" cy="180" r="99" opacity="0.18" />
-      <circle cx="955" cy="180" r="132" opacity="0.28" />
-      <path d="M823 180 H1087 M955 48 V312" opacity="0.15" />
-      <path d="M861.7 86.7 L1048.3 273.3 M1048.3 86.7 L861.7 273.3" opacity="0.08" />
+    <g class="mono" font-size="10" letter-spacing="1.2">
+      <text x="52" y="38" fill="#00e5ff" opacity="0.46">SYS://LOCAL.NODE/INBANNABLE</text>
+      <text x="286" y="38" fill="#3a4551">AUTH: PUBLIC_KEY</text>
+      <text x="1070" y="38" fill="#ff2a6d" opacity="0.38">CH.0x17</text>
+      <text x="52" y="334" fill="#3a4551">RX 48000 // BUFFER STABLE // TRACE 7F:A2:19</text>
+      <text x="1002" y="334" fill="#00e5ff" opacity="0.35">NO CARRIER LOST</text>
     </g>
 
-    <g class="sweep">
-      <path d="M955 180 L1078 130 A132 132 0 0 1 1087 180 Z" fill="url(#beam)" opacity="0.42" />
-      <path d="M955 180 L1082 148" stroke="#7ee787" stroke-width="1" opacity="0.55" />
+    <g opacity="0.55">
+      <path d="M52 58H248" stroke="#00e5ff" stroke-width="1" opacity="0.35" />
+      <path d="M248 58H302" stroke="#ff2a6d" stroke-width="1" opacity="0.32" />
+      <rect x="52" y="54" width="5" height="8" fill="#00e5ff" opacity="0.45" />
+      <rect x="308" y="54" width="20" height="8" fill="#8b5cf6" opacity="0.22" />
     </g>
 
-    <g fill="#7ee787" filter="url(#greenGlow)">
-      <circle cx="1017" cy="111" r="3.5" class="pulse" />
-      <circle cx="891" cy="222" r="3" opacity="0.76" />
-      <circle cx="1038" cy="238" r="2.5" opacity="0.58" />
+    <g class="mono">
+      <text x="54" y="103" fill="#54616e" font-size="12" letter-spacing="1.8">root@local:~$ resolve identity</text>
+
+      <text x="72" y="176" fill="#00e5ff" font-size="48" opacity="0.12" class="glitch-c">inbannable</text>
+      <text x="78" y="176" fill="#ff2a6d" font-size="48" opacity="0.10" class="glitch-m">inbannable</text>
+      <text x="75" y="176" fill="url(#name)" font-size="48" font-weight="500" letter-spacing="1.4">inbannable</text>
+      <rect x="382" y="139" width="9" height="43" fill="#00e5ff" opacity="0.62" class="cursor" />
+
+      <text x="75" y="214" fill="#697684" font-size="14" letter-spacing="2.6">SYSTEMS // SIGNALS // MACHINES</text>
+
+      <circle cx="79" cy="263" r="3.5" fill="#ff2a6d" class="pulse" />
+      <text x="94" y="267" fill="#667482" font-size="11">daemon.active</text>
+      <text x="196" y="267" fill="#303845" font-size="11">::</text>
+      <text x="218" y="267" fill="#00e5ff" opacity="0.42" font-size="11">build_quietly --verify --leave-clean-trace</text>
     </g>
 
-    <g stroke="#58a6ff" fill="none" opacity="0.8">
-      <path d="M935 180 H975 M955 160 V200" />
-      <circle cx="955" cy="180" r="6" />
+    <g transform="translate(54 297)" opacity="0.48">
+      <path d="M0 0H52L60 -8L70 9L82 -16L96 0H134L144 -6L155 0H186L198 -12L210 5L222 0H286" fill="none" stroke="#00e5ff" stroke-width="1.2" />
+      <path d="M292 0H310" stroke="#ff2a6d" stroke-width="1.2" />
+    </g>
+
+    <g clip-path="url(#radarClip)">
+      <circle cx="962" cy="180" r="132" fill="#050b10" opacity="0.44" />
+      <g stroke="#00e5ff" fill="none">
+        <circle cx="962" cy="180" r="33" opacity="0.10" />
+        <circle cx="962" cy="180" r="66" opacity="0.13" />
+        <circle cx="962" cy="180" r="99" opacity="0.17" />
+        <circle cx="962" cy="180" r="132" opacity="0.25" />
+        <path d="M830 180H1094M962 48V312" opacity="0.13" />
+        <path d="M868.7 86.7L1055.3 273.3M1055.3 86.7L868.7 273.3" opacity="0.07" />
+      </g>
+
+      <g class="sweep">
+        <path d="M962 180L1085 130A132 132 0 0 1 1094 180Z" fill="url(#beam)" opacity="0.62" />
+        <path d="M962 180L1089 148" stroke="#00e5ff" stroke-width="1" opacity="0.52" />
+      </g>
+
+      <g filter="url(#cyanGlow)">
+        <circle cx="1024" cy="111" r="3" fill="#ff2a6d" class="pulse" />
+        <circle cx="898" cy="222" r="2.5" fill="#00e5ff" opacity="0.65" />
+        <circle cx="1045" cy="238" r="2" fill="#8b5cf6" opacity="0.72" />
+      </g>
+
+      <g stroke="#ff2a6d" fill="none" opacity="0.45">
+        <path d="M949 180H975M962 167V193" />
+        <rect x="958" y="176" width="8" height="8" />
+      </g>
+    </g>
+
+    <g class="mono" font-size="9" fill="#53606d">
+      <text x="946" y="39">000°</text>
+      <text x="1102" y="184">090°</text>
+      <text x="946" y="329">180°</text>
+      <text x="800" y="184">270°</text>
+      <text x="1043" y="296" fill="#ff2a6d" opacity="0.52">TARGETS: 03</text>
+      <text x="835" y="76" fill="#00e5ff" opacity="0.36">AZIMUTH / 24 SECTORS</text>
+    </g>
+
+    <g fill="#ff2a6d" opacity="0.30">
+      <rect x="676" y="80" width="2" height="72" />
+      <rect x="684" y="80" width="1" height="36" />
+      <rect x="692" y="80" width="3" height="12" />
+    </g>
+    <g class="mono" font-size="8" fill="#45515e" opacity="0.70">
+      <text x="708" y="89">00110101</text>
+      <text x="708" y="104">11001010</text>
+      <text x="708" y="119">00010111</text>
+      <text x="708" y="134">10100100</text>
+      <text x="708" y="149">TRACE_OK</text>
     </g>
   </g>
 
-  <g class="mono" font-size="11" fill="#8b949e">
-    <text x="934" y="39">000°</text>
-    <text x="1097" y="184">090°</text>
-    <text x="934" y="329">180°</text>
-    <text x="781" y="184">270°</text>
-    <text x="1042" y="298" fill="#5b8f70" class="blink">rx // live</text>
-  </g>
-
-  <g transform="translate(68 325)" opacity="0.5">
-    <path d="M0 0 H54 L66 -11 L80 8 L94 -19 L110 0 H154 L166 -7 L177 0 H236" fill="none" stroke="#58a6ff" stroke-width="1.4" />
-  </g>
+  <path d="M18 1H1182L1199 18V342L1182 359H18L1 342V18Z" fill="none" stroke="#323944" stroke-width="2" />
+  <path d="M18 1H192" stroke="#00e5ff" stroke-width="2" opacity="0.35" />
+  <path d="M1008 359H1182" stroke="#ff2a6d" stroke-width="2" opacity="0.30" />
 </svg>
