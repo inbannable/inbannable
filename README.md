@@ -1,11 +1,5 @@
 <div align="center">
-  <img src="./assets/header.svg" width="100%" alt="William Xu — real-time systems, robotics, and playful interfaces" />
-</div>
-
-<div align="center">
-  <a href="https://github.com/inbannable?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_THE_LAB-0d1117?style=for-the-badge&logo=github&logoColor=7ee787" alt="Explore William's repositories" /></a>
-  <img src="https://img.shields.io/badge/SHANGHAI-0d1117?style=for-the-badge&logo=googlemaps&logoColor=58a6ff" alt="Based in Shanghai" />
-  <img src="https://img.shields.io/badge/STATUS-BUILDING-0d1117?style=for-the-badge&logo=statuspage&logoColor=ff7b72" alt="Currently building" />
+  <img src="./assets/header.svg" width="100%" alt="inbannable — systems, signals, machines" />
 </div>
 
 ## `> whoami`

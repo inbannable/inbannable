@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-  <title id="title">William Xu — systems builder</title>
-  <desc id="desc">A dark technical banner with a neon radar display, signal traces, and the words William Xu, real-time systems, robotics, playful interfaces.</desc>
+  <title id="title">inbannable — systems, signals, machines</title>
+  <desc id="desc">A subdued cyberpunk terminal banner with a dim radar, signal traces, and the handle inbannable.</desc>
 
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
@@ -13,9 +13,9 @@
       <stop offset="1" stop-color="#7ee787" stop-opacity="0" />
     </linearGradient>
     <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#f0f6fc" />
-      <stop offset="0.6" stop-color="#d2fbe2" />
-      <stop offset="1" stop-color="#7ee787" />
+      <stop offset="0" stop-color="#c9d1d9" />
+      <stop offset="0.72" stop-color="#9fb8ae" />
+      <stop offset="1" stop-color="#6ccf8e" />
     </linearGradient>
     <radialGradient id="radarGlow">
       <stop offset="0" stop-color="#7ee787" stop-opacity="0.10" />
@@ -23,7 +23,7 @@
       <stop offset="1" stop-color="#0d1117" stop-opacity="0" />
     </radialGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.12" />
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58a6ff" stroke-width="0.6" opacity="0.075" />
     </pattern>
     <filter id="greenGlow" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="4" result="blur" />
@@ -66,33 +66,35 @@
     <path d="M80 274 H48 V242" />
   </g>
 
-  <g class="sans">
-    <text x="68" y="85" fill="#7ee787" font-size="15" font-weight="650" letter-spacing="3">SYSTEMS BUILDER // SHANGHAI</text>
-    <text x="64" y="172" fill="url(#titleGradient)" font-size="72" font-weight="780" letter-spacing="-2">WILLIAM XU</text>
-    <text x="69" y="215" fill="#8b949e" font-size="21" font-weight="450" letter-spacing="1.2">REAL-TIME SYSTEMS  ·  ROBOTICS  ·  PLAYFUL INTERFACES</text>
+  <g class="mono">
+    <text x="68" y="84" fill="#52606d" font-size="12" letter-spacing="1.8">// node: shanghai / channel: 0x17</text>
+    <text x="68" y="162" fill="#3f8f62" font-size="18">~/</text>
+    <text x="94" y="162" fill="url(#titleGradient)" font-size="48" font-weight="500" letter-spacing="1.5">inbannable</text>
+    <rect x="397" y="126" width="10" height="42" fill="#6ccf8e" opacity="0.55" class="blink" />
+    <text x="70" y="207" fill="#68737f" font-size="15" letter-spacing="2.2">systems / signals / machines</text>
   </g>
 
-  <g class="mono" font-size="13">
-    <rect x="68" y="256" width="12" height="12" rx="2" fill="#7ee787" class="pulse" />
-    <text x="92" y="267" fill="#c9d1d9">signal acquired</text>
-    <text x="260" y="267" fill="#484f58">/</text>
-    <text x="282" y="267" fill="#58a6ff">build → test → tune → ship</text>
+  <g class="mono" font-size="12">
+    <circle cx="73" cy="263" r="4" fill="#6ccf8e" class="pulse" />
+    <text x="88" y="267" fill="#73808c">[ listening ]</text>
+    <text x="194" y="267" fill="#343d46">::</text>
+    <text x="218" y="267" fill="#5f7790">build quietly. measure twice.</text>
   </g>
 
   <g clip-path="url(#radarClip)">
     <circle cx="955" cy="180" r="132" fill="#07140f" opacity="0.48" />
     <g stroke="#7ee787" fill="none">
-      <circle cx="955" cy="180" r="33" opacity="0.20" />
-      <circle cx="955" cy="180" r="66" opacity="0.24" />
-      <circle cx="955" cy="180" r="99" opacity="0.28" />
-      <circle cx="955" cy="180" r="132" opacity="0.42" />
-      <path d="M823 180 H1087 M955 48 V312" opacity="0.24" />
-      <path d="M861.7 86.7 L1048.3 273.3 M1048.3 86.7 L861.7 273.3" opacity="0.14" />
+      <circle cx="955" cy="180" r="33" opacity="0.12" />
+      <circle cx="955" cy="180" r="66" opacity="0.15" />
+      <circle cx="955" cy="180" r="99" opacity="0.18" />
+      <circle cx="955" cy="180" r="132" opacity="0.28" />
+      <path d="M823 180 H1087 M955 48 V312" opacity="0.15" />
+      <path d="M861.7 86.7 L1048.3 273.3 M1048.3 86.7 L861.7 273.3" opacity="0.08" />
     </g>
 
     <g class="sweep">
-      <path d="M955 180 L1078 130 A132 132 0 0 1 1087 180 Z" fill="url(#beam)" opacity="0.72" />
-      <path d="M955 180 L1082 148" stroke="#7ee787" stroke-width="1.5" opacity="0.88" />
+      <path d="M955 180 L1078 130 A132 132 0 0 1 1087 180 Z" fill="url(#beam)" opacity="0.42" />
+      <path d="M955 180 L1082 148" stroke="#7ee787" stroke-width="1" opacity="0.55" />
     </g>
 
     <g fill="#7ee787" filter="url(#greenGlow)">
@@ -112,7 +114,7 @@
     <text x="1097" y="184">090°</text>
     <text x="934" y="329">180°</text>
     <text x="781" y="184">270°</text>
-    <text x="1070" y="298" fill="#7ee787" class="blink">● LIVE</text>
+    <text x="1042" y="298" fill="#5b8f70" class="blink">rx // live</text>
   </g>
 
   <g transform="translate(68 325)" opacity="0.5">
