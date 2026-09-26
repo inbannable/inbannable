@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="200" viewBox="0 0 460 200" role="img" aria-labelledby="title desc">
+  <title id="title">Turret Lab — tune, observe, repeat</title>
+  <desc id="desc">An illustrative response curve overshoots and settles toward a target, beside three controller sliders. This is a conceptual diagram, not measured data.</desc>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#d9b26b" stroke-opacity=".09"/></pattern></defs>
+  <rect width="460" height="200" rx="12" fill="#282218"/>
+  <rect x="30" y="24" width="284" height="120" fill="url(#grid)"/>
+  <path d="M30 28v116h284" fill="none" stroke="#655438"/>
+  <path d="M30 69h284" stroke="#ac9366" stroke-dasharray="4 5"/>
+  <path d="M30 138C49 138 50 28 75 32S106 103 134 95S157 52 184 57S213 77 238 74S269 67 314 69" fill="none" stroke="#f5c777" stroke-width="2.5"/>
+  <circle cx="314" cy="69" r="4" fill="#f5c777"/>
+  <g stroke="#655438" stroke-width="3" stroke-linecap="round"><path d="M350 51h77M350 89h77M350 127h77"/></g>
+  <g stroke="#f5c777" stroke-width="3" stroke-linecap="round"><path d="M350 51h48M350 89h19M350 127h35"/></g>
+  <g fill="#f5c777"><circle cx="398" cy="51" r="5"/><circle cx="369" cy="89" r="5"/><circle cx="385" cy="127" r="5"/></g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#dab77e">
+    <text x="350" y="39">P</text><text x="350" y="77">I</text><text x="350" y="115">D</text>
+    <text x="249" y="58">TARGET</text><text x="24" y="179" letter-spacing="1">FIND THE BALANCE</text><text x="436" y="179" text-anchor="end">03 / CONTROL</text>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="200" viewBox="0 0 460 200" role="img" aria-labelledby="title desc">
+  <title id="title">WristAsk — a conversation on your wrist</title>
+  <desc id="desc">A stylized watch with conversation bubbles, surrounded by input and streaming signal lines.</desc>
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#a3a5ec" opacity=".12"/></pattern>
+  </defs>
+  <rect width="460" height="200" rx="12" fill="#191b30"/>
+  <rect width="460" height="200" rx="12" fill="url(#dots)"/>
+  <g fill="none" stroke="#7775bd" stroke-opacity=".5">
+    <path d="M28 80h94l24 20h27M288 100h26l24-20h94"/>
+    <path d="M28 126h77l20-18h47M290 115h26l24 22h92" stroke-dasharray="3 5"/>
+    <circle cx="39" cy="80" r="5" fill="#191b30"/><circle cx="419" cy="80" r="5" fill="#191b30"/>
+  </g>
+  <rect x="198" y="-12" width="66" height="224" rx="24" fill="#34314f"/>
+  <path d="M211 0v200m40-200v200" stroke="#494163" stroke-dasharray="3 5"/>
+  <rect x="172" y="25" width="117" height="150" rx="34" fill="#72708d"/>
+  <rect x="176" y="29" width="109" height="142" rx="30" fill="#0d1120" stroke="#b0a3e8"/>
+  <rect x="290" y="65" width="5" height="18" rx="2" fill="#aaa1c5"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9">
+    <text x="191" y="53" fill="#c0b3fb">WristAsk</text>
+    <circle cx="265" cy="49" r="3" fill="#b7f36b"/>
+    <rect x="209" y="65" width="60" height="25" rx="9" fill="#8370ca"/>
+    <path d="M221 77h35" stroke="#f0eaff" stroke-width="3" stroke-linecap="round"/>
+    <rect x="190" y="98" width="75" height="42" rx="10" fill="#282a45"/>
+    <path d="M201 111h49m-49 9h40m-40 9h25" stroke="#c0b3fb" stroke-width="3" stroke-linecap="round"/>
+    <path d="M229 126v6" stroke="#b7f36b" stroke-width="2"/>
+    <text x="24" y="179" fill="#b1a5dd" letter-spacing="1">ASK ANYWHERE</text>
+    <text x="436" y="179" fill="#b1a5dd" text-anchor="end">01 / INTERFACE</text>
+  </g>
+</svg>

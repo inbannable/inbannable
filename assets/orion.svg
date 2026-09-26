@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="200" viewBox="0 0 460 200" role="img" aria-labelledby="title desc">
+  <title id="title">Orion — aim while moving</title>
+  <desc id="desc">A conceptual overhead robot follows a planned path while its turret points toward a fixed target.</desc>
+  <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#85b6f1" stroke-opacity=".08"/></pattern></defs>
+  <rect width="460" height="200" rx="12" fill="#152235"/>
+  <rect width="460" height="200" rx="12" fill="url(#grid)"/>
+  <path d="M34 132C94 132 83 55 153 64S197 142 257 124S310 97 342 110S392 133 426 112" fill="none" stroke="#78aaf0" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="m226 100 144-55" stroke="#b7f36b" stroke-dasharray="3 5"/>
+  <path d="m370 45-148 13 30 64Z" fill="#b7f36b" opacity=".045"/>
+  <g transform="rotate(20 226 100)">
+    <rect x="194" y="66" width="64" height="68" rx="10" fill="#263b58" stroke="#85b6f1" stroke-width="1.5"/>
+    <g fill="#85b6f1"><rect x="189" y="73" width="8" height="18" rx="2"/><rect x="189" y="109" width="8" height="18" rx="2"/><rect x="255" y="73" width="8" height="18" rx="2"/><rect x="255" y="109" width="8" height="18" rx="2"/></g>
+  </g>
+  <circle cx="226" cy="100" r="19" fill="#152235" stroke="#85b6f1"/>
+  <path d="m226 100 35-13" stroke="#b7f36b" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="226" cy="100" r="6" fill="#b7f36b"/>
+  <g fill="none" stroke="#b7f36b"><circle cx="370" cy="45" r="16"/><circle cx="370" cy="45" r="6"/><path d="M370 23v10m0 24v10m-22-22h10m24 0h10"/></g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#99bbea">
+    <text x="34" y="42">FRC 6940</text><text x="34" y="58" fill="#6c8fbf">SENSE → PLAN → ACT</text>
+    <text x="24" y="179" letter-spacing="1">BUILT TO MOVE</text><text x="436" y="179" text-anchor="end">04 / MOTION</text>
+  </g>
+</svg>

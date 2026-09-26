@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="200" viewBox="0 0 460 200" role="img" aria-labelledby="title desc">
+  <title id="title">EchoRadar — sound becomes direction</title>
+  <desc id="desc">A radar with twenty-four angular sectors, highlighted directional signals, and channel meters.</desc>
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#7fdcc8" stroke-opacity=".07"/></pattern>
+    <path id="spoke" d="M230 96v-78"/>
+  </defs>
+  <rect width="460" height="200" rx="12" fill="#102525"/>
+  <rect width="460" height="200" rx="12" fill="url(#grid)"/>
+  <g fill="none" stroke="#367167">
+    <circle cx="230" cy="96" r="78"/><circle cx="230" cy="96" r="52"/><circle cx="230" cy="96" r="26"/>
+    <g stroke-opacity=".5">
+      <use href="#spoke"/><use href="#spoke" transform="rotate(15 230 96)"/><use href="#spoke" transform="rotate(30 230 96)"/><use href="#spoke" transform="rotate(45 230 96)"/><use href="#spoke" transform="rotate(60 230 96)"/><use href="#spoke" transform="rotate(75 230 96)"/><use href="#spoke" transform="rotate(90 230 96)"/><use href="#spoke" transform="rotate(105 230 96)"/><use href="#spoke" transform="rotate(120 230 96)"/><use href="#spoke" transform="rotate(135 230 96)"/><use href="#spoke" transform="rotate(150 230 96)"/><use href="#spoke" transform="rotate(165 230 96)"/><use href="#spoke" transform="rotate(180 230 96)"/><use href="#spoke" transform="rotate(195 230 96)"/><use href="#spoke" transform="rotate(210 230 96)"/><use href="#spoke" transform="rotate(225 230 96)"/><use href="#spoke" transform="rotate(240 230 96)"/><use href="#spoke" transform="rotate(255 230 96)"/><use href="#spoke" transform="rotate(270 230 96)"/><use href="#spoke" transform="rotate(285 230 96)"/><use href="#spoke" transform="rotate(300 230 96)"/><use href="#spoke" transform="rotate(315 230 96)"/><use href="#spoke" transform="rotate(330 230 96)"/><use href="#spoke" transform="rotate(345 230 96)"/>
+    </g>
+  </g>
+  <path d="m230 96 39-67.55a78 78 0 0 1 16.15 12.4Z" fill="#84edcd" opacity=".35"/>
+  <path d="m230 96-50.23 13.46a52 52 0 0 1-1.77-13.46Z" fill="#84edcd" opacity=".25"/>
+  <path d="m230 96 55.15-55.15" stroke="#a2ffe3" stroke-width="1.5"/>
+  <circle cx="266" cy="49" r="4" fill="#a2ffe3"/>
+  <circle cx="230" cy="96" r="4" fill="#a2ffe3"/>
+  <g fill="#78d6bf"><rect x="347" y="91" width="7" height="29" rx="2"/><rect x="360" y="76" width="7" height="44" rx="2"/><rect x="373" y="55" width="7" height="65" rx="2"/><rect x="386" y="85" width="7" height="35" rx="2"/><rect x="399" y="100" width="7" height="20" rx="2"/></g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#8fd6c5">
+    <text x="34" y="82">5.1 / 7.1</text><text x="34" y="99">24 SECTORS</text><text x="34" y="116" fill="#60978c">SPATIAL DSP</text>
+    <text x="24" y="179" letter-spacing="1">LISTEN IN SPACE</text><text x="436" y="179" text-anchor="end">02 / SIGNAL</text>
+  </g>
+</svg>
